@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Animated Background Canvas -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="logo">MyPortfolio</a>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HEADER -->
+    <header id="hero" class="section">
+      <h1>My Portfolio</h1>
+      <p>Computer Science Student • Developer • Problem Solver</p>
+    </header>
+
+    <!-- ABOUT -->
+    <div class="section hidden" id="about">
+      <h2>About Me</h2>
+      <div class="about-tabs">
+        <button class="tab-btn active" data-tab="bio">Bio</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="experience">Experience</button>
+      </div>
+      <div class="tab-content active" id="bio">
+        <p style="text-align: center; max-width: 800px; margin: auto">
+          I'm a Computer Science student passionate about building clean,
+          efficient, and meaningful software. I enjoy working with Data
+          Structures, Graphics, and Python interfaces. I'm always learning and
+          improving toward becoming a top-level programmer.
+        </p>
+      </div>
+      <div class="tab-content" id="education">
+        <p style="text-align: center; max-width: 800px; margin: auto">
+          Bachelor in Computer Science in Egyptian Chinese University (ECU) 2024
+          - 2027 <br />
+          Focus: cybersecurity, Software Engineering, Computer Graphics, Game
+          Development
+        </p>
+      </div>
+      <div class="tab-content" id="experience">
+        <p style="text-align: center; max-width: 800px; margin: auto">
+          Worked on projects involving C++, Python GUI, and OpenGL animations.
+          Collaborated in teams for software development and problem solving
+          tasks.
+        </p>
+      </div>
+    </div>
+
+    <!-- SKILLS -->
+    <div class="section" id="skills">
+      <h2>Skills</h2>
+      <div class="skills">
+        <div class="skill-box">C++ & C</div>
+        <div class="skill-box">C#</div>
+        <div class="skill-box">OOP Basics</div>
+        <div class="skill-box">Python GUI</div>
+        <div class="skill-box">Tkinter</div>
+        <div class="skill-box">OpenGL</div>
+        <div class="skill-box">Data Structures</div>
+        <div class="skill-box">Problem Solving</div>
+        <div class="skill-box">HTML & CSS $ JavaScript</div>
+      </div>
+    </div>
+
+    <!-- PROJECTS -->
+    <div class="section" id="projects">
+      <h2>Projects</h2>
+    </div>
+
+    <div class="container">
+      <div class="card section" data-project="project1">
+        <h3>Student Management System (C++)</h3>
+        <p>
+          A complete student data management system built using multiple Data
+          Structures including Linked List, Stack, Queue, and Binary Search
+          Tree.
+        </p>
+        <p class="tech">C++ • Data Structures</p>
+      </div>
+      <div class="card section" data-project="project2">
+        <h3>OpenGL Tank Animation</h3>
+        <p>
+          Developed a full animated 3D scene including tank model, trees,
+          clouds, and graphical transformations using OpenGL.
+        </p>
+        <p class="tech">OpenGL • Computer Graphics</p>
+      </div>
+      <div class="card section" data-project="project3">
+        <h3>Python GUI – Data Structures Visualizer</h3>
+        <p>
+          Built a Tkinter GUI that visually displays Linked List, Stack, and
+          Queue operations.
+        </p>
+        <p class="tech">Python • Tkinter • C++ Integration</p>
+      </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 — All rights reserved.</p>
+      <div>
+        <a href="mailto:ziadahmed201201@gmail.com" target="_blank"
+          ><i class="fas fa-envelope"></i
+        ></a>
+        <a href="https://www.instagram.com/ziaad_ahhmed" target="_blank"
+          ><i class="fab fa-instagram"></i
+        ></a>
+        <a
+          href="https://www.facebook.com/share/1FqrVaDvvz/?mibextid=wwXIfr"
+          target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
